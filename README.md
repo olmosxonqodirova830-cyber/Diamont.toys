@@ -1,0 +1,2 @@
+# Diamont.toys
+Qodirova Olmosxon
