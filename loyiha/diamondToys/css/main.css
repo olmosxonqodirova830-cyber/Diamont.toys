@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@font-face {
+  font-family: "Varela Round";
+  src: url("/assets/offlineFonts/VarelaRound-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+.about .form-wrap form button, .about-wrapper .card .img, .instagramPhotos .btn button, .instagramPhotos .btn, .instagramPhotos .card-wrapper .card, .instagramPhotos-top, .Available .card-info a, .Stuffed-Animals .card-wrapper .card, .Stuffed-Animals-top a, .product-variety .container, footer .footer-top .messengers, footer .footer-top .category, footer .footer-top .logo-wrapper .logo, footer .footer-top .logo-wrapper, header .hero .hero-modal, header .hero .container, header nav .category a, header nav .logo-wrapper .logo, header nav .logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  background: #f8f8f8;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1240px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+header nav {
+  padding: 20px 0;
+}
+header nav .container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header nav .logo-wrapper {
+  width: 92px;
+  height: 32px;
+  flex-shrink: 0;
+}
+header nav .logo-wrapper .logo {
+  border: 1px solid transparent;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+header nav .logo-wrapper .logo:active {
+  opacity: 0.8;
+}
+header nav .logo-wrapper .logo:hover {
+  border: 1px solid #26b0c9;
+}
+header nav .logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+header nav .category {
+  display: flex;
+  align-items: center;
+  padding-left: 42px;
+  padding-right: 24px;
+}
+header nav .category a {
+  padding: 12px 18px;
+  transition: all 0.3s ease-in;
+  border: 1px solid transparent;
+  color: #111111;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+}
+header nav .category a:hover {
+  border: 1px solid #26b0c9;
+  color: #26b0c9;
+}
+header .hero {
+  background: url("../assets/images/png/hero-bg.png") center/cover no-repeat;
+}
+header .hero .container {
+  height: 100vh;
+}
+header .hero .hero-modal {
+  flex-direction: column;
+  padding: 56px 77px;
+  border-radius: 16px;
+  background: #fff;
+}
+header .hero .hero-modal p {
+  color: #26b0c9;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.2;
+  font-family: "Varela Round", sans-serif;
+}
+header .hero .hero-modal h2 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 1.2;
+  font-family: "Varela Round", sans-serif;
+  width: 416px;
+  text-align: center;
+  padding: 17px 0 20px;
+}
+header .hero .hero-modal button {
+  background: #26b0c9;
+  border-radius: 24px;
+  padding: 12px 28px;
+  border: 1px solid #26b0c9;
+  transition: all 0.3s;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Varela Round", sans-serif;
+}
+header .hero .hero-modal button:hover {
+  color: #26b0c9;
+  background: #ffffff;
+}
+
+footer {
+  background: #26b0c9;
+}
+footer .footer-top {
+  padding: 48px 0;
+}
+footer .footer-top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-top .logo-wrapper {
+  width: 92px;
+  height: 32px;
+  flex-shrink: 0;
+}
+footer .footer-top .logo-wrapper .logo {
+  border: 1px solid transparent;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+footer .footer-top .logo-wrapper .logo:active {
+  opacity: 0.8;
+}
+footer .footer-top .logo-wrapper .logo:hover {
+  border: 1px solid #26b0c9;
+}
+footer .footer-top .logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .footer-top .category {
+  gap: 28px;
+}
+footer .footer-top .category a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14;
+  line-height: 1.7;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+}
+footer .footer-top .messengers {
+  gap: 12px;
+}
+footer .footer-bottom {
+  display: flex;
+  align-items: start;
+}
+footer .footer-bottom p {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.2;
+  font-family: "Varela Round", sans-serif;
+  padding: 20px;
+  border-top: 1px solid #fff;
+}
+
+.product-variety {
+  padding: 120px 0;
+}
+.product-variety .container {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.product-variety .card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  width: calc(50% - 15px);
+  position: relative;
+  border-radius: 16px;
+  padding: 48px 0;
+  padding-left: 264px;
+}
+.product-variety .card:nth-child(1) {
+  background: #ffc12c;
+}
+.product-variety .card:nth-child(2) {
+  background: #fb416b;
+}
+.product-variety .card img {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  bottom: 26px;
+  left: 15px;
+}
+.product-variety .card h2 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.5;
+  font-family: "Varela Round", sans-serif;
+}
+.product-variety .card a {
+  color: #111111;
+  background: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Varela Round", sans-serif;
+  padding: 8px 24px;
+  border-radius: 20px;
+}
+
+.Stuffed-Animals {
+  padding: 20px 0 120px;
+}
+.Stuffed-Animals .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.Stuffed-Animals-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #e5e5e5;
+}
+.Stuffed-Animals-top h2 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.3;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+}
+.Stuffed-Animals-top a {
+  gap: 6px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ddd;
+  color: #111111;
+  font-weight: 400;
+  font-size: 14;
+  line-height: 1.4;
+  font-family: "Varela Round", sans-serif;
+}
+.Stuffed-Animals .card-wrapper {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.Stuffed-Animals .card-wrapper .card {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1490196078);
+  padding: 33px 44px;
+  flex-direction: column;
+  width: 100%;
+  max-width: 270px;
+}
+.Stuffed-Animals .card-wrapper .card img {
+  width: 182px;
+  height: 182px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Stuffed-Animals .card-wrapper .card h4 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Varela Round", sans-serif;
+  margin: 25px 0 12px;
+}
+.Stuffed-Animals .card-wrapper .card button {
+  background: #26b0c9;
+  border-radius: 12px;
+  padding: 2px 12px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 12;
+  line-height: 1.6;
+  font-family: "Varela Round", sans-serif;
+}
+
+.Available .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.Available-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  text-align: center;
+}
+.Available-title p {
+  color: #26b0c9;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.1;
+  font-family: "Varela Round", sans-serif;
+}
+.Available-title h2 {
+  max-width: 447px;
+  color: #111111;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 1.4;
+  font-family: "Varela Round", sans-serif;
+}
+.Available .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.Available .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.Available .card-img {
+  margin-right: 17px;
+}
+.Available .card-img img {
+  width: 567px;
+  height: 422px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+}
+.Available .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 500px;
+}
+.Available .card-info h2 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 1.4;
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #26b0c9;
+}
+.Available .card-info p {
+  color: #999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Varela Round", sans-serif;
+  padding: 25px 34px 26px 0;
+}
+.Available .card-info a {
+  background: #26b0c9;
+  padding: 12px 28px;
+  border-radius: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Varela Round", sans-serif;
+}
+
+.instagramPhotos {
+  padding: 120px 0;
+}
+.instagramPhotos .container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.instagramPhotos-top {
+  flex-direction: column;
+  gap: 17px;
+}
+.instagramPhotos-top p {
+  color: #26b0c9;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.1;
+  font-family: "Varela Round", sans-serif;
+}
+.instagramPhotos-top h2 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 1.4;
+  font-family: "Varela Round", sans-serif;
+}
+.instagramPhotos .card-wrapper {
+  margin: 5px 0 76px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.instagramPhotos .card-wrapper .card {
+  max-width: 172px;
+  max-height: 172px;
+}
+.instagramPhotos .card-wrapper .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.instagramPhotos .btn button {
+  background: #26b0c9;
+  border-radius: 24px;
+  padding: 12px 28px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Varela Round", sans-serif;
+}
+
+.about {
+  padding: 20px 0;
+}
+.about__title h2 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  font-family: "Varela Round", sans-serif;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #26b0c9;
+  display: inline-block;
+}
+.about-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 45px 0 45px;
+}
+.about-wrapper .card {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+}
+.about-wrapper .card:nth-child(even) .info {
+  order: 2;
+}
+.about-wrapper .card:nth-child(even) .img {
+  order: 1;
+}
+.about-wrapper .card .info {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+}
+.about-wrapper .card .info h2 {
+  color: #111111;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.4;
+  font-family: "Varela Round", sans-serif;
+  text-transform: capitalize;
+}
+.about-wrapper .card .info p {
+  color: #111111;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "Varela Round", sans-serif;
+  text-align: justify;
+}
+.about-wrapper .card .img {
+  width: 25%;
+  height: 250px;
+}
+.about-wrapper .card .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about .form-wrap {
+  width: 100%;
+  padding: 20px 15px;
+  margin: 50px 0;
+}
+.about .form-wrap form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+}
+.about .form-wrap form input,
+.about .form-wrap form textarea {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 24px;
+  outline: none;
+  border: 1px solid #26b0c9;
+}
+.about .form-wrap form input::-moz-placeholder, .about .form-wrap form textarea::-moz-placeholder {
+  text-transform: capitalize;
+}
+.about .form-wrap form input::placeholder,
+.about .form-wrap form textarea::placeholder {
+  text-transform: capitalize;
+}
+.about .form-wrap form button {
+  background: #26b0c9;
+  padding: 12px 44px;
+  border-radius: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Varela Round", sans-serif;
+}/*# sourceMappingURL=main.css.map */
